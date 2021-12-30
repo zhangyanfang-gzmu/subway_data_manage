@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gzmu.lpzyf.mapper.CityMapper">
+<select id="findAll" resultType="City">
+    select id,name_cn as nameCn,name_en as nameEn from city_info
+</select>
+
+<insert id="insert">
+    insert into city_info values(#{id},#{nameCn},#{nameEn})
+</insert>
+
+</mapper>
