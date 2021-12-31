@@ -95,5 +95,13 @@
         </dependency>
 
     </dependencies>
-
+    <build>
+        <plugins>
+            <!--创建一个可执行的jar-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
